@@ -1,22 +1,30 @@
+* base remappings
 [scroll]>[shutdn]
-[caps]>[escape]
-[lctrl]>[lwin]
-[lalt]>[pdown]
-{lalt}>{speed5}{-rwin}{tab}{+rwin}
-[rwin]>[lalt]
-[rctrl]>[lctrl]
-[bspace]>[lshift]
-[delete]>[bspace]
-{rshift}{delete}>{speed5}{delete}
+
+* CMD closer for left hand, CTRL closer for right
+* Both buttons next to each other are the other button
+[lctrl]>[rwin]
+[lalt]>[lctrl]
+
+* Home is Copy without mods, Cut with rshift
+* End is Paste
 {home}>{speed5}{-lwin}{c}{+lwin}
 {rshift}{home}>{speed5}{-lwin}{x}{+lwin}
-{pup}>{speed5}{-lshift}{-rwin}{cbrack}{+lshift}{+rwin}
-{lshift}{pup}>{speed5}{-lshift}{-rwin}{obrack}{+lshift}{+rwin}
-{rshift}{`}>{speed5}{-lwin}{z}{+lwin}
-[intl-\]>[end]
-[end]>[tab]
 {end}>{speed5}{-lwin}{v}{+lwin}
-[pdown]>[rwin]
+
+* Right Control + backticks are Undo
+{rctrl}{`}>{speed5}{-lwin}{z}{+lwin}
+
+* Keypad remappings
 [kp-lctrl]>[lwin]
 [kp-rwin]>[rctrl]
 [kp-rctrl]>[rwin]
+
+* backspace and delete in same key with shift modifier (backspace without mod.)
+* original backspace button is shift
+[bspace]>[lshift]
+[delete]>[bspace]
+{rshift}{delete}>{speed5}{delete}
+
+* Caps is escape unless pressed > 500ms
+[caps]>[escape][t&h500][caps]
