@@ -7,10 +7,8 @@
 * printscreen does Mac printscreen
 {prtscr}>{speed5}{-lwin}{-lshift}{5}{+lshift}{+lwin}
 
-* CMD closer for left hand, CTRL closer for right
-* Both buttons next to each other are the other button
+* MacOS change: left ctrl is cmd
 [lctrl]>[rwin]
-[lalt]>[lctrl]
 
 * Home is Copy without mods, Cut with rshift
 * End is Paste
@@ -27,11 +25,16 @@
 [kp-rctrl]>[rwin]
 
 * backspace and delete in same key with shift modifier (backspace without mod.)
-* original backspace button is shift
-[bspace]>[lshift]
+* original backspace button is shift, when longpressed acts as lctrl
+[bspace]>[lshift][t&h200][lctrl]
 [delete]>[bspace]
 {rshift}{delete}>{speed5}{delete}
 
 * Caps is escape unless pressed > 500ms
 [caps]>[escape][t&h500][caps]
 
+* media control
+* lalt + arrowup = volumeup
+* lalt + arrowdown = volumedown
+{lalt}{up}>{vol+}
+{lalt}{down}>{vol-}
