@@ -1,10 +1,11 @@
-* base remappings
-* pause is lock
+* pause is lock screen
 {pause}>{speed5}{-lwin}{-rctrl}{q}{-lctrl}{+lwin}
 
-* function key remappings
-* shift+F9 is Mac printscreen
-{lshift}{f9}>{speed5}{-lwin}{-lshift}{5}{+lshift}{+lwin}
+* scroll lock is switch between open windows of the same application
+{scroll}>{speed5}{-lwin}{`}{+lwin}
+
+* printscreen does Mac printscreen
+{prtscr}>{speed5}{-lwin}{-lshift}{5}{+lshift}{+lwin}
 
 * CMD closer for left hand, CTRL closer for right
 * Both buttons next to each other are the other button
@@ -33,3 +34,4 @@
 
 * Caps is escape unless pressed > 500ms
 [caps]>[escape][t&h500][caps]
+
