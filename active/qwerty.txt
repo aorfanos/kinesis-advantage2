@@ -1,5 +1,10 @@
 * base remappings
-[scroll]>[shutdn]
+* pause is lock
+{pause}>{speed5}{-lwin}{-rctrl}{q}{-lctrl}{+lwin}
+
+* function key remappings
+* shift+F9 is Mac printscreen
+{lshift}{f9}>{speed5}{-lwin}{-lshift}{5}{+lshift}{+lwin}
 
 * CMD closer for left hand, CTRL closer for right
 * Both buttons next to each other are the other button
